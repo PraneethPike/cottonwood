@@ -1,0 +1,230 @@
+<?php
+
+	if($_POST["submit"]){
+
+		$result = '<div class="alert alert-success">Form Submitted</div>';
+
+		if(!$_POST['name']){
+
+			$error = "<br/>Please enter your name";
+		}
+		if(!$_POST['email']){
+
+			$error .= "<br/>Please enter your email";
+		}
+		if(!$_POST['phone']){
+
+			$error .= "<br/>Please enter your phone#";
+		}
+		if(!$_POST['message']){
+
+			$error .= "<br/>lease enter your message";
+		}
+
+		if ($_POST['email']!="" AND !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) { 
+			
+			$error.="<br/>Please enter a valid email address";
+		}
+
+		if($error){
+			$result = '<div class="alert alert-danger">There were errors in your submission:
+			'.$error.'</div>';
+		} else{
+
+		if (mail("$info@cubicalreach.in", "Comment from website", "Name:".$_POST['name']."
+
+			Email:".$_POST['email']."
+
+			Message: ".$_POST['message'])){
+
+
+			$result = '<div class="alert alert-success">Thank you! We will get in touch!</div>';
+			
+		} else{
+		 
+			$result = '<div class="alert alert-danger">Sorry!There was error in sending. Please try again later.</div>';	
+
+		}
+
+
+	}
+
+?>
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+		<title>CottonWood Compost</title>
+		
+		<meta charset="utf-8"/>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!--link rel="stylesheet" href="main.css" type="text/css"/-->
+		<link rel="stylesheet" href="main.css" type="text/css"/>
+		<link rel="stylesheet" href="contact.css" type="text/css"/>
+		
+		<link rel="stylesheet" href="bootstrap.css"/>
+		<!-- Latest compiled and minified CSS -->
+		<!--link rel="stylesheet" href="normalize.css"/-->
+		<script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+		
+
+		
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+<!-- Menu Bar -->
+	<div id='menubar' class="clearfix">
+		<link rel="stylesheet" href="styles.css">
+
+		<img src="images/logo.png" id="menuBarLogo" type="image/svg+xml" alt="CottonWood Compost"/>
+		
+		
+		<ul>
+		
+		<li class="button "><a><span>Home</span></a></li>
+		<li class="button"><a><span>Products</span></a></li>
+		<li class="button" id="about-btn">
+
+			<a href="#about-para"><span>About</span></a>
+		
+		</li>
+		<li class="button"><a><span>Team</span></a></li>
+		<li class="button"><a><span>Contact</span></a></li>
+
+		</ul>
+
+	</div>
+
+		<div id="about-para" class="pull-right"> <!--About Drop Down -->
+			<h3>
+				<u>About</u>
+			</h3>
+			<p style="border-top:1px solid Silver; padding-top:10px">
+				Cotton Wood Compost was developed from a need for a simpler food source. Creator Samuel Castaneda and team developed Soylent after recognizing the disproportionate amount of time and money they spent creating nutritionally complete meals.
+			</p>
+			<p>
+				Cotton Wood Compost is a food product (classified as a food, not a supplement, by the FDA) designed for use as a staple meal by all adults. Each serving of Soylent provides maximum nutrition with minimum effort.
+			</p>
+			<p>
+				For press inquiries, please email press@cottonwoodcompost.com Click here to download our press kit.
+			</p>
+			<p>
+				For general questions about Soylent, please see our FAQ page or send an email to info@cottonwoodcompost.com.
+				Existing customers with questions about an order or subscription can email myorder@cottonwoodcompost.com. 
+			</p>
+		</div>
+	<script>
+	$(function(){
+		$('#about-btn').click(function(){
+			$("#about-para").slideToggle();
+		});
+		});
+	/*$(function(){
+		$(".button").click(function(){
+			$(".button").toggleClass("active");
+		});
+	});*/
+	</script> 
+<!-- End of Menu Bar -->
+
+
+<video autoplay loop>
+	<source src="video.mov">
+	<source src="video.webm"/>
+
+</video>
+
+<section>
+
+<div class="container">
+	<div class="form" >
+
+		<div class="col-md-6 col-md-offset-3 emailform">	
+		</div>
+
+
+	<form method="post">
+
+		<div class="form-group">
+
+		<div class="field">
+		<label for="name">Name:</label>
+		<input type="text" name="name" class="form-input" placeholder="John Smith" value="<?php echo $_POST['name']; ?>"/><br/>
+		</div>
+		<div class="field">
+		<label for ="email">Email:</label>
+		<input type="email" name="email" placeholder="JohnSmith@gmail.com" value="<?php echo $_POST['email']; ?>"/><br/>
+		</div>
+		<div class="field">
+		<label for="phone">Phone:</label>
+		<input type="text" name="phone" placeholder="(XXX)-XXX-XXXX"  value="<?php echo $_POST['phone']; ?>"/><br/>
+		</div>
+		<div class="field">
+		<label for="message">Message:</label>
+		<textarea type="text" name="Message" class="textarea" placeholder="Feel free to make it lengthy!"  value="<?php echo $_POST['message']; ?>"></textarea>
+		</div>
+		<input type="submit" value="Go" class="pull-right btn" />
+
+		</div>
+		<?php echo '$result'; ?>
+
+	</form>
+
+	<!-- Script for form-->
+	<script type="text/javascript">
+
+			$( "input" ).click(function() {
+			  var text = $( this ).text();
+			  $( this ).val( "" );
+			});
+
+			$("#submit").mouseenter(function(){
+
+				$(this).val("Click it");
+
+				
+
+			});
+			
+			/*$( "input" ).focus(function() {
+			  $( label" ).css( "color", "rgba(10,200,0,1)" );});*/
+
+
+
+
+	</script>
+	</div>	
+
+</div>
+
+
+</section>
+
+
+<footer>
+
+	<ul>
+	<li>FAQ</li>
+	<li>Terms & Conditions</li>
+	<li>Designed with passion by <a href="http://www.cubicalreach.in" target="_blank">Cubical Reach</a></li>
+	<li>2733 Cottonwood Ave<br/>
+    San Jacinto, CA  92582-4734<br/>
+    United States</li>
+
+	</ul>
+	
+</footer>
+
+
+
+
+</body>
+</html>

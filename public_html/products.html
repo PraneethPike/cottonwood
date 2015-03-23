@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<title>CottonWood Compost</title>
+		
+		<meta charset="utf-8"/>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="main.css" type="text/css"/>
+		<link rel="stylesheet" href="products.css" type="text/css"/>
+		<link rel="stylesheet" href="bootstrap.css"/>
+		<!-- Latest compiled and minified CSS -->
+		<!--link rel="stylesheet" href="normalize.css"/-->
+		<script src="http://code.jquery.com/jquery-1.11.2.js"></script>
+		<script src="main.js"></script>
+
+		
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'/>
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'/>
+
+
+</head>
+<body>
+<div id='menubar'>
+		<link rel="stylesheet" href="styles.css">
+
+		<img src="images/logo.png" id="menuBarLogo" type="image/svg+xml" />
+		
+		
+		<ul>		
+			<li class="button "><a><span>Home</span></a></li>
+			<li class="button"><a><span>Products</span></a></li>
+			<li class="button" id="about-btn">
+				<a href="#about-para"><span>About</span></a>		
+			</li>
+			<li class="button" ><a href="team.html"><span>Team</span></a></li>
+			<li class="button"><a><span>Contact</span></a></li>
+		</ul>
+
+</div>
+
+		<div id="about-para" class="pull-right"> <!--About Drop Down -->
+			<h3>
+				<u>About</u>
+			</h3>
+			<p style="border-top:1px solid Silver; padding-top:10px">
+				In its fiscal year, Cottonwood Compost is making strides to not only benefit the community, but to pave the way for eco-green recycling of waste. Through our hands-on projects, team-collaboration, and open atmosphere, all ideas are heard and discussed in order to carry out effective means of recycling.  Cottonwood Compost has become a recognized corporation of the Inland Empire, which provides quality fertilizing materials for our agricultural community. At Cottonwood Compost we hope to make the agricultural community stronger by our product, and so we embrace critique and cooperate well with the needs of our customer.
+			</p>
+			<p>
+				For general questions about Cottonwood Compost, please see our FAQ page or send an email to info@cottonwoodcompost.com.  Existing customers with questions about an order or subscription can email samuelcastaneda@cottonwoodcompost.com
+			</p>
+		</div>
+	
+
+<!-- END OF MENUBAR============================================================================ -->
+<video autoplay loop>
+
+	<source src="video.mov" />
+	<source src="video.webm"/>
+</video>
+<div class="vid-layer">
+</div>
+
+<!-- ==== Sections begin ==== -->
+<section id="sectionOneProducts">
+
+<h1 id="mainHeading" style="font-size:32px"></h1>
+<script src="externalscripts/typed.js"></script>
+<script>
+  $(function(){
+      $("#mainHeading").typed({
+        strings: ["With Cottonwood Compost", "Reinforce your Soil"],
+        typeSpeed: 0
+      }).queue();
+  });
+</script>
+
+</section>
+<section id="sectionTwoProducts">
+<div class="sectionHeading">
+<h1>Compost</h1>
+<h3 id="thirdHeading">What makes it all happen?</h3>
+</div>
+
+	<div class="row">
+	<div class="col-md-6">
+	<ul class="list-ingredients pull-left" id="listOne">		
+			<li class="pushIn" id="actinomycetes">Actinomycetes</li>			
+		
+			<li class="pushIn" id="fungi">Fungi</li>
+				
+		
+			<li class="pushIn" id="rotifers">Rotifers</li>
+		
+			<li class="pushIn" id="oxygen">Oxygen</li>
+	
+			<li class="pushIn" id="nutrients">Nutrients</li>
+	</ul>
+	</div>
+	<div class="col-md-6">
+	<ul class="list-ingredients" id="listTwo">
+			<li class="pushIn" id="bacteria">Bacteria</li>
+			<li class="pushIn" id="protozoa">Protozoa</li>
+			<li class="pushIn" id="humus">Humus</li>
+			<li class="pushIn" id="c-nratio">C:N Ratio</li>
+			<li class="pushIn" id="temperature">Temperature</li>	
+
+	</ul>
+	</div>
+	<script>
+	$(document).ready(function(){
+		$("#listOne").fadeIn('slow');
+		$("#listTwo").fadeIn('slow');
+	});
+	</script>
+</div>
+
+	<div class="row" id="rowForDescriptionDivs">
+
+		<div class= "col-md-8" id="descriptionDivIngredients">
+
+		<h3 style="margin:15% 0 0 10%">Click on the above components to discover more about them</h3>
+
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$("#actinomycetes").click(function(){
+				$("#descriptionDivIngredients").addClass('fade-in-wow')
+				.html("<p> In composting, they play an important role in degrading complex organics such as cellulose, lignin, chitin, and proteins. Chemically able to break down debris such as woody stems, bark, or newspaper.</p>");
+			});
+			$("#bacteria").click(function(){
+				$("#descriptionDivIngredients").addClass('fade-in-wow')
+				.html("<p>At 45 - 70C temperatures, beneficial thermophilic bacteria thrive, while many bacterial pathogens and weed seeds are killed, being very beneficial to commercially important crops (e.g., wheat, peppers, tomato, okra).</p>");
+			});
+			$("#fungi").click(function(){
+				$("#descriptionDivIngredients").addClass('fade-in-wow')
+				.html("<p>being molds and yeasts, they are responsible for decomposition of complex plant polymers and compost.<br/>Important because they break down tough debris, enabling bacteria to continue decomposition process once most cellulose is gone.<br/>Attacks organic residues that are too dry, acidic, or low in nitrogen for bacteria decomposition<br/>Fungi classified as saprophytes and in compost they form strict aerobes that grow both as unseen filaments and as grey or white fuzzy colonies on compost surface.</p>");
+			});
+			$("#protozoa").click(function(){
+				$("#descriptionDivIngredients").addClass('fade-in-wow')
+				.html("<p>One celled microscopic animals that live in water droplets of compost, obtaining food from organic matter and consumers of ingesting bacteria and fungi.</p>");
+			});
+			$("#rotifers").click(function(){
+				$("#descriptionDivIngredients").addClass('fade-in-wow')
+				.html("<p>Microscopic multicellular organisms found in films of water in compost, feed an organic matter and also found on feed on bacteria and fungi.</p>");
+			});
+			$("#humus").click(function(){
+				$("#descriptionDivIngredients").addClass('fade-in-wow')
+				.html("<p>Maintaining C:N ratios prevents the development of foul odor nitrogenous gases as well as making the breakdown of complex organic molecules possible.  <em>Humic acid</em> is one of the many byproducts which provides binding sites for cations, replacing H+ ions at a slightly higher <em>pH</em>.  It’s for this reason that compost can be beneficial for amending soils by increasing <em>Cation Exchange Capacity<em> and adding nutrients.</p>");
+			});
+			$("#oxygen").click(function(){
+				$("#descriptionDivIngredients").addClass('fade-in-wow')
+				.html("<p>Oxygen is necessary for bacterial respiration that drives the composting process, occurring in open air piles called windrows.  All bacteria and fungi are living organisms and need oxygen, defining them aerobic.</p>");
+			});
+			$("#c-nratio").click(function(){
+				$("#descriptionDivIngredients").addClass('fade-in-wow')
+				.html("<p>Organisms that decompose organic matter use carbon as a source of energy and nitrogen for building cell structure.  They need more carbon than nitrogen.  If there is too much carbon, decomposition slows when the nitrogen is used up and some organisms die.  Other organisms form new cell material using their stored nitrogen.  In the process more carbon is burned, Thus the amount of carbon is reduced while nitrogen is recycled.  Decomposition takes longer, however, when the initial C:N ratio is much above 30.</p>");
+			});
+			$("#nutrients").click(function(){
+				$("#descriptionDivIngredients").addClass('fade-in-wow')
+				.html("<p>The feedstock used is the primary determinant of the composition and physical and chemical properties of the final compost.  The feedstock and its composting process dictate the available nutrients, and texture of the produced compost.</p>");
+			});
+			$("#temperature").click(function(){
+				$("#descriptionDivIngredients").addClass('fade-in-wow')
+				.html("<p>At temperatures rising above 40<sup>0</sup>C the mesophilic microorganisms become less active and are replaced by those who are thermophilic, or heat loving.  At temperatures of 55<sup>0</sup>C and above, many microorganisms that are human or plant pathogens are destroyed.  Because temperatures over 65C kill many forms of microbes and limit the rate of decomposition, which gives reason to reduce heat levels with the aerobic tactics.  High temperatures accelerate the breakdown of proteins, fats, and carbohydrates like cellulose and hemicellulose and as supply of these high energy compounds is exhausted, the temperature gradually decreases. </p>");
+			});
+
+
+
+
+		});
+
+	</script>
+<!--
+=================
+Gallery Code
+========================================
+-->
+<!--div class="slider">
+<ul>
+<li><img src="images/gallery/1.jpg"></li>
+<li><img src="images/gallery/2.jpg"</li>
+<li><img src="images/gallery/3.jpg"</li>
+<li><img src="images/gallery/4.jpg"</li>
+</ul>
+</div-->
+
+<!-- ==================================
+=============================================================
+-->
+
+</section>
+
+
+
+
+
+<!-- ==== Sections End ==== -->
+<footer>
+	
+	
+<div class="container">
+ <div class="row">
+  <div id="LogoAndAddress"> 
+	<img src="images/svg/cottonwood.svg" alt="Cottonwood Compost"/>
+	<p>	
+	2733 Cottonwood Ave<br/>
+    San Jacinto, CA  92582-4734<br/>
+    United States
+    </p>
+  </div>
+ </div>
+ <div class="row">
+ 	<ul>
+	<li>FAQ</li>
+	<li>Terms & Conditions</li>
+	<li>Designed with passion by <a href="http://www.cubicalreach.in" target="_blank">Cubical Reach</a></li>
+ </div>
+</div>
+   
+
+	
+	
+</footer>
+
+
+</body>
+</html>

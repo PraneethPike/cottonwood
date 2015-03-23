@@ -1,0 +1,175 @@
+
+.vid-layer{
+	position:fixed;
+	background:rgba(0,0,0,0.8);
+	z-index:-1;
+	height:100%;
+	width:100%;
+}
+section{
+	position: static;
+	z-index:3;
+}
+.sectionHeading{
+	position: absolute;
+	margin-top: 2em;
+	margin-left:4em;
+	border-bottom: 1px solid silver;
+	width:80%;
+}
+#sectionOneProducts{
+background:url('images/redcross-field.png');
+background-size: 100% 140%;
+background-repeat: no-repeat;
+1background-attachment: fixed;
+height:400px;
+}
+#sectionOneProducts h1{
+	color:white;
+	position: absolute;
+	margin-top:10em;
+	margin-left:5em;
+	font-family: 'Raleway', sans-serif;
+	font-weight:400;
+}
+#sectionTwoProducts{
+	position: static;
+	margin:0;
+	color:white;
+	height:800px;
+	background:linear-gradient(to top, rgba(200,200,200,0.8)15%, rgba(255,255,255,0.99)50%);
+	color:black;
+
+
+}
+#sectionTwoProducts h1,h2,h3,h4,h6{
+		font-weight:400;
+}
+/*.pushIn td{
+	padding-left: 10px;
+}*/
+.list-ingredients{
+	list-style: none;
+}
+#listOne{
+	display:inline-block;
+	position:absolute;
+	margin:15em 0 0 10em;	
+	border-radius:2px;
+
+}
+#listTwo{
+	display:inline-block;
+	1position:absolute;
+	1float:right;
+	margin-top:15em;
+}
+.list-ingredients li{
+	margin-left:5%;
+	padding:1.2em !important;
+	border-radius:5px;
+	border-bottom:1px solid silver;
+	width:25em;
+	1background: rgba(5,5,5,0.8);
+}
+
+.pushIn:hover{
+	cursor: pointer;
+	background: rgba(200,200,200,0.7);
+	perspective:30000;
+	-webkit-perspectibe:30000;
+	transform:rotateY(30deg);
+	-webkit-transform:rotateY(30deg);
+	-moz-transform:rotateY(30deg);
+	transition: transform .5s;
+}
+#rowForDescriptionDivs{
+	position: absolute;
+	1margin-top:35em;
+	margin-left:15em;
+}
+#descriptionDivIngredients{
+	display:hidden;
+	height:30%;
+	width:40%;
+}
+/*.slider{
+	height:250px;
+	width:80%;
+	overflow-x:scroll;
+	overflow-y:hidden;
+	box-shadow: 10px 10px 10px rgba(0,80,0,0.9);
+}
+.slider ul{
+	list-style: none;
+	position:absolute;
+	margin:0;
+	height:250px;
+	width:1000px;
+
+}
+.slider ul li{
+	display:inline-block;
+	margin:0;
+	margin-left:50px;
+	height:150px;
+	width:300px;
+}
+.slider ul li img {
+	position:absolute;
+	margin:0;
+	
+	box-shadow: 50px 10px 60px gray;
+}*/
+#imageDiv{
+	display:hidden;
+	position:inherit;
+	max-width:500px;
+	margin-left:55%;
+}
+#pictureDescript{
+	margin-left: -35px;
+	opacity: 0;
+}
+
+footer{
+	position: static;
+}
+
+/*Animations========================*/
+.fade-in-wow{
+	animation: fade-in-wow .8s;
+	-webkit-animation: fade-in-wow .8s;
+	-moz-animation: fade-in-wow .8s;
+	-o-animation: fade-in-wow .8s;
+}
+@keyframes fade-in-wow{
+	from{
+		margin-left: -8%;
+		opacity:0;
+	}
+	to{
+		margin-left: 0%;
+		opacity:1;
+	}
+}
+@-webkit-keyframes fade-in-wow{
+	from{
+		margin-left: -8%;
+		opacity:0;
+	}
+	to{
+		margin-left: 0%;
+		opacity:1;
+	}
+}
+@-moz-keyframes fade-in-wow{
+	from{
+		margin-left: -8%;
+		opacity:0;
+	}
+	to{
+		margin-left: 0%;
+		opacity:1;
+	}
+}

@@ -1,0 +1,277 @@
+body{
+margin:0;
+font-family:'Raleway', sans-serif;
+-webkit-text-smoothing:anti-aliased !important;
+-moz-text-smoothing:anti-aliased !important;
+-o-text-smoothing:anti-aliased !important;
+1background:linear-gradient(to bottom, rgba(0,0,0,0)0%,rgba(0,0,0,0.5)50% ),url('images/grass.png') ;
+}
+
+u{
+height:2px;
+}
+*a:hover{
+	text-decoration: none !important;
+}
+.clear{
+	width:100%;
+	height:50px;
+	background:transparent;
+}
+.loadingScreen{
+position:fixed;
+min-height:100%;
+min-width:100%;
+background:rgba(0,0,0,1);
+z-index:15;
+}
+.loadingObjects{
+	position: absolute;
+	margin-left:25%;
+	margin-top:12%;
+	padding:1.2em;
+}
+
+.loadingBar{
+	position: absolute;
+	margin:25% 0% 0% 25%;
+	width:0px;
+	height:3px;
+	background:rgba(255,255,255,0.9);
+	border-radius:1px;
+}
+
+
+#about-para{
+	display:none;
+	padding: 100px;
+	1overflow:hidden;
+	position:absolute;
+	1color:white;
+	background:rgba(255,255,255,0.9);
+	z-index:4;
+	1height:200px;
+	top:55px;
+	1float:right;
+	border-radius:5px;
+	box-shadow: 5px 5px rgba(0,0,0,0.8);
+}
+#about-para p{
+	font-family: 'Raleway', sans-serif;
+	1text-align: center;
+}
+#about-para > h3>u {
+	width:70em;
+}
+video{
+	position:fixed;
+	min-height:100%;
+	min-width:100%;
+
+	background-size: cover;
+	z-index:-1;
+}
+
+.button a{
+	text-decoration: none !important;
+}
+.button a:hover{
+	text-decoration: none;
+}
+section{
+	width:100%;
+	1position:absolute;
+	z-index:2;
+	overflow-y:none;
+
+}
+#section-1{
+	background: rgba(0,0,0,0.85);
+	1margin-top:50px;
+	color:white;
+	font-family:'Raleway', sans-serif;
+	1height:600px;
+	position:static;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+#TaglineLogoImage{
+	1position: absolute;
+	margin:0em;
+	height:30%;
+	width:60%;
+	
+}
+#section1Row1{
+	1padding:3em 1.5em 3em 1.5em;
+	background-image:url('images/section-1-revamp.png');
+	background-size:100%;
+	background-position:0px -150px ;
+	background-repeat: no-repeat;
+
+}
+div#section1Row1>.col-md-6{
+	margin:10% 0 0 0 ;
+	padding-bottom:50px;
+}
+
+#section1Row1 > div:nth-child(2) > p{
+	width:350px;
+}
+1#bg-img{
+	position:absolute;
+	z-index:2;
+	width:100%;
+	height:400px;
+
+}
+
+#section1Row2 div{
+	padding:4.2em 0em 4.2em 4.2em;
+	width:28em;
+
+}
+#section1Row2>nth-child(1){
+	padding-left: 0;
+}
+#section-2{
+	position:static;
+	1margin-top:600px;
+	min-width:100%;
+	height:400px;
+	background:url('images/section-2.png');
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	color:black;
+	font-family: 'Noto Sans', sans-serif;
+	z-index:2;
+}
+#section2Row1{
+	position: absolute;
+	margin-top:5%;
+}
+
+#section-3{
+	background:rgba(0,0,0,0.85);
+	height:300px;
+	position: static;
+	z-index:2;
+	1margin-top:1150px;
+	color:white;
+}
+.nutri-table{
+	position: absolute;
+	margin:6em;
+}
+.nutri-table tr{
+	
+	border-bottom: 1px solid silver;
+}
+.nutri-table tr td{
+	width:30em;
+	padding:10px 15px 10px 2px;
+}
+.nutri-table tr td:hover{
+	cursor:pointer;
+	background:rgba(155,155,155,0.4);
+	transition:background .8s;
+}
+.no-bullet-list{
+	list-style: none;
+
+}
+.horizontal > li{
+	display:inline-block;
+	margin:1.5em;
+} 
+footer{
+	position:static;
+	padding-top:20px;
+	1bottom:0;
+	width:100%;
+	box-shadow: -8px 0px white; 
+	background:rgba(15,15,15,0.9);
+	color:white;
+	font-family: 'Noto sans', sans-serif;
+	z-index:3;
+}
+footer ul{
+	list-style: none;
+}
+footer ul li{
+	display:inline-block;
+	padding-right:50px;
+	
+
+}
+footer ul li:hover{
+	cursor: pointer;
+	color:rgba(0,200,0,0.9);
+	transition: color 1s;
+	-webkit-transition: color 1s;
+	-moz-transition: color 1s;
+}
+
+
+#fade-in{
+	margin-left: -250px;
+	opacity: 0;
+}
+1#footer-strip{
+	background:rgba(0,0,0,1);
+	min-width:100%;
+}
+
+
+/*
+========================== Animation Classes ==================================
+*/
+.left-right{
+	animation: slideRight .5s;
+	-webkit-animation: slideRight .5s;
+	-moz-animation: slideRight .5s;
+	-o-animation: slideRight .5s;
+}
+@keyframes slideRight{ /*Keyframes for slide right from left*/
+	from{margin-left:-85px;}
+	to{margin-left:0px;}
+}
+@-webkit-keyframes slideRight{
+	from{margin-left:-85px;}
+	to{margin-left:0px;}
+}
+@-moz-keyframes slideRight{
+	from{margin-left:-85px;}
+	to{margin-left:0px;}
+}
+@-o-keyframes slideRight{
+	from{margin-left:-85px;}
+	to{margin-left:0px;}
+}
+
+
+/*
+========================== Animation Classes ==================================
+*/
+.fade-in-wow{
+	animation: slide 2s;
+	-webkit-animation: slide 2s;
+		-moz-animation: slide 2s;
+		-o-animation: slide 2s;
+}
+@keyframes slide{
+	from{opacity:0; margin-bottom:-15px;}
+	to{opacity:1; margin-bottom:0;}
+}
+@-webkit-keyframes slide{
+	from{opacity:0; margin-bottom:-15px;}
+	to{opacity:1; margin-bottom:0;}
+}
+@-moz-keyframes slide{
+	from{opacity:0; margin-bottom:-15px;}
+	to{opacity:1; margin-bottom:0;}
+}
+@-o-keyframes slide{
+	from{opacity:0; margin-bottom:-15px;}
+	to{opacity:1; margin-bottom:0;}
+}

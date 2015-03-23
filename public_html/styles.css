@@ -1,0 +1,69 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+#menubar{
+	position:fixed !important;
+	margin:0;
+	width:100%;
+	height:55px;
+	background:rgba(0,0,0,1);
+	z-index:5;
+}
+#menuBarLogo{
+	height:40px;
+	width:100px;
+	1padding:5px;
+	margin: 5px 0px 0px 15px;
+}
+#menubar ul{
+	list-style: none;
+	float:right;
+}
+
+#menubar ul li{
+	color:#fff;
+	display:inline-block;
+	font-family: "Noto sans", sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+	text-transform: uppercase;
+	1padding:10px 5px 15px 5px ;
+	transition:color .25s;
+	-webkit-transition:color .25s;
+	-moz-transition:color .25s;
+	-o-transition:color .25s;
+}
+#menubar ul li a{
+	padding:8px 15px 8px 15px;
+	color:white;
+}
+#menubar ul li a:hover{
+	cursor:pointer;
+	color:rgba(10,200,0,1);
+	text-decoration:none;
+	1text-shadow: 2px 2px 8px #FF0000;
+	transition:color .25s;
+	-webkit-transition:color .25s;
+	-moz-transition:color .25s;
+	-o-transition:color .25s;
+}
+#menubar ul li:after{
+	content:"";
+	display:block;
+	height:3px;
+	width:0;
+	background:rgba(255,255,255,1);
+
+}
+#menubar ul li:hover:after{
+	width:100%;
+	transition:width .25s;
+}
+.active{
+	color:rgba(10,200,0,1) !important;
+}
+.active::after{
+	content:"";
+	display:block;
+	height:3px;
+	width:100% !important;
+	background:rgba(255,255,255,1);
+}

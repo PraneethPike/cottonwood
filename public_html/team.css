@@ -1,0 +1,112 @@
+body{
+margin:0;
+font-family:'Raleway', sans-serif;
+-webkit-text-smoothing:anti-aliased;
+-moz-text-smoothing:anti-aliased;
+-o-text-smoothing:anti-aliased;
+1background:linear-gradient(to bottom, rgba(0,0,0,0)0%,rgba(0,0,0,0.5)50% ),url('images/grass.png') ;
+}
+#about-para{
+	display:none;
+	padding: 100px;
+	1overflow:hidden;
+	position:absolute;
+	1color:white;
+	background:rgba(255,255,255,0.9);
+	z-index:4;
+	1height:200px;
+	top:55px;
+	1float:right;
+	border-radius:5px;
+	box-shadow: 5px 5px rgba(0,0,0,0.8);
+}
+#about-para p{
+	font-family: 'Raleway', sans-serif;
+	1text-align: center;
+}
+#about-para > h3>u {
+	width:70em;
+}
+video{
+	position:fixed;
+	min-height:100%;
+	min-width:100%;
+
+	background-size: cover;
+	z-index:-1;
+}
+.vid-layer{
+	height: 100%;
+	width: 100%;
+	background:rgba(0,0,0,0.8);
+	position: fixed;
+	background-size: cover;
+	z-index:-1;
+}
+section{
+	background:linear-gradient(to left,rgba(255,255,255,0.5)10%, rgba(255,255,255,0.8)20%, rgba(255,255,255,0.95)40%, rgba(255,255,255,1)100%);
+}
+.team{
+	padding:5em ;
+}
+
+.thumb{
+	height:100px;
+	width:100px;
+	border-radius:50%;
+	display:inline-block;
+	margin-top:-10px;
+}
+.image-title{
+	margin-top:5em;
+}
+.image-title > img{
+	margin-top:-35px;
+}
+
+.name-title{
+	display: inline-block;
+	margin-left: 25px;
+	padding-bottom: 5px;
+	border-bottom:2px dotted silver;
+	width:70%;
+}
+.name{
+	font-size: 1.15em;
+	line-height: normal;
+}
+.title{
+	font-size:0.9em;
+	margin-top:-10px;
+}
+.description{
+	margin-left:15px;
+	width:75%;
+	font-size: 14px;
+	color:gray;
+}
+
+.no-bullet-list{
+	list-style: none;
+
+}
+section{
+	position: static;
+}
+footer{
+	position:static;
+	z-index:2;
+	padding:20px 0 20px 0;
+	width:100%;
+	background:rgba(80,80,80,0.99);
+	color:white;
+	font-family: 'Noto sans', sans-serif;
+}
+footer ul{
+	list-style: none;
+}
+footer ul li{
+	display:inline-block;
+	padding-right:50px;
+
+}
